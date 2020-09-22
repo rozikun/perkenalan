@@ -1,23 +1,54 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: ghostwhite;
+    overflow: auto;
 }
+
+header{
+    margin:0px;
+    height: 100vh;
+}
+
 header,main{
     padding-left:310px;
     padding-right:10px;
 }
+
+.hp{
+    visibility: hidden;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer{
+      padding-left: 0;
+    }
+    .page-footer{
+        padding-left: 0;
+    }
+    .hp{
+        visibility: visible;
+    }
+}
+
 footer{
     padding-left: 300px;
-}
-header{
-    width: 100%;
-    height: 300px;
 }
 
 header>h4{
     margin: 0px;
     text-align: center;
     position: relative;
-    top: 40%;
+    top: 50%;
+    -ms-transform: rotateY(-50%);
+    transform: rotateY(-50%);
+}
+
+header>.panah{
+    margin: 0px;
+    position: relative;
+    top: 80%;
     -ms-transform: rotateY(-50%);
     transform: rotateY(-50%);
 }
@@ -47,3 +78,22 @@ main{
 .kanan{
     text-align: right;
 }
+
+footer>.fa {
+    padding: 20px;
+    /* border: 0.5px solid white; */
+    /* border-radius: 30%; */
+    font-size: 20px;
+    color:white;
+  }
+
+  /* Untuk Div */
+  .tentang, .pendidikan, .skill{
+      /* visibility: hidden; */
+      margin: 0px;
+      height: 100vh;
+  }
+  .pengalaman{
+      margin: 0px;
+      height: 100vh;
+  }

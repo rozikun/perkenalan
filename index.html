@@ -6,53 +6,68 @@
     <title>Perkenalan</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body>
-    <header class="blue-grey">
+<body data-spy="scroll">
+    <header id="atas">
         <h4>Profile Saya</h4>
+        <div class="panah animate__animated animate__bounce animate__infinite infinite">
+          <center> <a class="fa fa-arrow-down" style="font-size: 50px; text-decoration: none;" aria-hidden="true"  href="#tentang" ></a> </center>
+        </div>
     </header>
-    
-    <ul class="sidenav sidenav-fixed  blue-grey darken-4" id="nav-mobile" style="transform: translateX(0px);">
+   
+    <ul class="sidenav sidenav-fixed blue-grey darken-4" id="slide-out">
         <li> 
             <div class="user-view">
                 <div class="background brand-logo">
-                <canvas style="background-color: firebrick; height: 100%;"></canvas>
                 </div>
-                <a href="#user"><img class="foto" src="https://cdn.cvdesignr.com/users/5f60afc32bac1/8fd1dc7c89abbbeaa9c0754b5523af553f96e184."></a>
+                <a href="#"><img class="foto" src="https://cdn.cvdesignr.com/users/5f60afc32bac1/8fd1dc7c89abbbeaa9c0754b5523af553f96e184."></a>
                 <span class="white-text name">Muchammad Rifny Setyawan</span>
                 <span class="white-text email">Web Content, Web Developer</span>
             </div>
         </li>
-        <li><a class="white-text" href="#">Tentang Saya</a></li>
-        <li><a class="white-text" href="#">Skill</a></li>
-        <li><a class="white-text" href="#">Riwayat Pendidikan</a></li>
-        <li><a class="white-text" href="#">Pengalaman Bekerja (Magang)</a></li>
+        <li><a class="white-text" href="#tentang" onclick="animasiKiri()">Tentang Saya</a></li>
+        <li><a class="white-text" href="#skill">Skill</a></li>
+        <li><a class="white-text" href="#pendidikan">Riwayat Pendidikan</a></li>
+        <li><a class="white-text" href="#pengalaman">Pengalaman Bekerja (Magang)</a></li>
     </ul>
+
     <main>
-       
-           <span id="tentang"><h5><b>Tentang Saya </b> </h5></span>
+        <div class="fixed-action-btn hp">
+            <a href="#" data-target="slide-out" class="sidenav-trigger btn-floating btn-large red">
+                <i class="large material-icons">menu</i>
+            </a>
+        </div>
+        <div class="tentang gerak" id="tentang">
+            <div id="isi">
+           <span><h5><b>Tentang Saya </b> </h5></span>
            <hr>
            <p>
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nostrum illum excepturi quas harum perferendis ipsam similique ipsa quia temporibus, accusamus porro, maiores illo non inventore odit nihil? Dolorum, officiis? &nbsp;
                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum debitis, maiores repudiandae voluptatibus fugiat temporibus, nesciunt soluta cupiditate doloribus, necessitatibus dicta? Perspiciatis, eos dolorum adipisci dignissimos fugit beatae nesciunt rerum.
            </p>
-          
-           <span id="pendidikan" class="kanan"><h5><b>Riwayat Pendidikan </b> </h5></span>
+           </div>
+        </div>
+        <div class="pendidikan" id="pendidikan">
+           <span class="kanan"><h5><b>Riwayat Pendidikan </b> </h5></span>
            <hr>
            <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nostrum illum excepturi quas harum perferendis ipsam similique ipsa quia temporibus, accusamus porro, maiores illo non inventore odit nihil? Dolorum, officiis? &nbsp;
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum debitis, maiores repudiandae voluptatibus fugiat temporibus, nesciunt soluta cupiditate doloribus, necessitatibus dicta? Perspiciatis, eos dolorum adipisci dignissimos fugit beatae nesciunt rerum.
            </p>
-
+        </div>
+        <div class="skill">
            <span id="skill"><h5><b>Skill Achievement</b> </h5></span>
            <hr>
            <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nostrum illum excepturi quas harum perferendis ipsam similique ipsa quia temporibus, accusamus porro, maiores illo non inventore odit nihil? Dolorum, officiis? &nbsp;
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum debitis, maiores repudiandae voluptatibus fugiat temporibus, nesciunt soluta cupiditate doloribus, necessitatibus dicta? Perspiciatis, eos dolorum adipisci dignissimos fugit beatae nesciunt rerum.
            </p>
-
+        </div>
+        <div class="pengalaman">
            <span id="pengalaman" class="kanan"><h5><b>Pengalaman Bekerja</b> </h5></span>
            <hr>
            <p>Pengalaman bekerja atau magang</p>
@@ -80,7 +95,7 @@
                 </div>
                 </li>
             </ul>
-
+        </div>
     </main>
     
     <footer class="page-footer">
@@ -89,6 +104,11 @@
                 <div class="center">
                     <h5 class="white-text">Social Media</h5>
                     <span class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</span>
+                    <br>
+                    <a href="#" class="fa fa-github"></a>
+                    <a href="#" class="fa fa-twitter-square"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
                 </div>
             </div>
         </div>
@@ -101,11 +121,25 @@
 <!-- End Of Body -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
-
     <script>
         $(document).ready(function (){
+            $('.sidenav').sidenav();
             $('.collapsible').collapsible();
+            $('.fixed-action-btn').floatingActionButton();
         });
     </script>
+    <script>
+    function HitungW(x) {
+    if (x.matches) {
+        document.getElementById("hp").classList.remove("sidenav-fixed");
+        }
+    }
+    var x = window.matchMedia("(max-width: 992px)");
+    HitungW(x);
+    // x.addListener(HitungW);
+
+    </script>
+    <script src="js/script.js"></script>
+
 </body>
 </html>
