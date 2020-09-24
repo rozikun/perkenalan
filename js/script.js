@@ -1,7 +1,4 @@
-function animasiKiri() {
-    document.getElementById("tentang").classList.add("animate__animated");
-    document.getElementById("tentang").classList.add("animate__fadeInLeft");
-}
+
 
 //animate scroll
 $(window).scroll(function() {

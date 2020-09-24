@@ -4,97 +4,241 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perkenalan</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body data-spy="scroll">
+<body class="blue-grey darken-3 white-text">
+    
+    <nav class="sidenav sidenav-fixed blue-grey darken-4">
+        <ul class="vtengah">
+        <li><a style="text-align: center;" href="#tentang"><i class="material-icons white-text">person</i> </a></li>
+        <li><a href="#pendidikan"><i class="large material-icons white-text">school</i></a></li>
+        <li><a href="#skill"><i class="material-icons white-text">code</i></a></li>
+        <li><a href="#pengalaman"><i class="material-icons white-text">watch_later</i></a></li>
+        </ul>
+    </nav>
+
     <header id="atas">
-        <h4>Profile Saya</h4>
-        <div class="panah animate__animated animate__bounce animate__infinite infinite">
-          <center> <a class="fa fa-arrow-down" style="font-size: 50px; text-decoration: none;" aria-hidden="true"  href="#tentang" ></a> </center>
-        </div>
+      <div class="carousel carousel-slider">
+        <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
+        <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2"></a>
+    </div>
     </header>
-   
-    <ul class="sidenav sidenav-fixed blue-grey darken-4" id="slide-out">
-        <li> 
-            <div class="user-view">
-                <div class="background brand-logo">
-                </div>
-                <a href="#"><img class="foto" src="https://cdn.cvdesignr.com/users/5f60afc32bac1/8fd1dc7c89abbbeaa9c0754b5523af553f96e184."></a>
-                <span class="white-text name">Muchammad Rifny Setyawan</span>
-                <span class="white-text email">Web Content, Web Developer</span>
-            </div>
-        </li>
-        <li><a class="white-text" href="#tentang" onclick="animasiKiri()">Tentang Saya</a></li>
-        <li><a class="white-text" href="#skill">Skill</a></li>
-        <li><a class="white-text" href="#pendidikan">Riwayat Pendidikan</a></li>
-        <li><a class="white-text" href="#pengalaman">Pengalaman Bekerja (Magang)</a></li>
-    </ul>
 
     <main>
-        <div class="fixed-action-btn hp">
-            <a href="#" data-target="slide-out" class="sidenav-trigger btn-floating btn-large red">
-                <i class="large material-icons">menu</i>
-            </a>
-        </div>
-        <div class="tentang gerak" id="tentang">
-            <div id="isi">
-           <span><h5><b>Tentang Saya </b> </h5></span>
-           <hr>
-           <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nostrum illum excepturi quas harum perferendis ipsam similique ipsa quia temporibus, accusamus porro, maiores illo non inventore odit nihil? Dolorum, officiis? &nbsp;
-               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum debitis, maiores repudiandae voluptatibus fugiat temporibus, nesciunt soluta cupiditate doloribus, necessitatibus dicta? Perspiciatis, eos dolorum adipisci dignissimos fugit beatae nesciunt rerum.
-           </p>
+        <div class="tentang scrollspy" id="tentang">
+        <div id="isi">
+           <div class="row">
+               <div class="col s12 m4 l4">
+                  <div class="row">
+                  <div class="col s12 m12 l12">
+                  <div class="card circle blue-grey darken-4">
+                      <div class="card-image">
+                        <img height="250" src="https://cdn.kyou.id/items/55937-yahari-ore-no-seishun-love-come-wa-machigatteiru-zoku-original-illustration-police-hachiman-big-tapestry.jpg.webp">
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col s12 m12 l12">
+                    <div class="card blue-grey darken-4">
+                        <div class="card-content">
+                            <p style="font-size: 20px;">Muchammad Rifny Setyawan</p>
+                            <p style="font-size: 12px;">22 Tahun, S1 Teknik Informatika</p>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+               </div>
+               <div class="col s12 m8 l8">
+                   <div class="card medium blue-grey darken-4">
+                       <div class="card-content white-text">
+                           <span class="card-title"><h5>Tentang Saya</h5></span>
+                           <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio deleniti itaque unde aut. Eveniet, officiis quisquam! Obcaecati corporis sint explicabo voluptates repellat? Omnis, quibusdam aliquam culpa nesciunt laboriosam veniam quo.</p>
+                        </div>
+                   </div>
+               </div>
+           </div>
            </div>
         </div>
+
         <div class="pendidikan" id="pendidikan">
-           <span class="kanan"><h5><b>Riwayat Pendidikan </b> </h5></span>
-           <hr>
-           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nostrum illum excepturi quas harum perferendis ipsam similique ipsa quia temporibus, accusamus porro, maiores illo non inventore odit nihil? Dolorum, officiis? &nbsp;
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum debitis, maiores repudiandae voluptatibus fugiat temporibus, nesciunt soluta cupiditate doloribus, necessitatibus dicta? Perspiciatis, eos dolorum adipisci dignissimos fugit beatae nesciunt rerum.
-           </p>
+           <div class="row">
+            <div class="col s12">
+                <div class="card blue-grey darken-4">
+                    <div class="card-content">
+                        <span class="card-title center"><i class="medium material-icons">school</i> <h5>Riwayat Pendidikan</h5></span>
+                        <table class="striped responsive-table">
+                            <thead>
+                                <tr>
+                                    <th data-field="id">Sekolah</th>
+                                    <th data-field="name">Nama Sekolah</th>
+                                    <th data-field="name">Jurusan</th>
+                                    <th data-field="price">Lama Belajar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SD</td>
+                                    <td>SDN Kasin Malang</td>
+                                    <td>Umum</td>
+                                    <td>2006 - 2010</td>
+                                </tr>
+                                <tr>
+                                    <td>SMP</td>
+                                    <td>SMP Laboratorium UM Malang</td>
+                                    <td>Umum</td>
+                                    <td>2010 - 2013</td>
+                                </tr>
+                                <tr>
+                                    <td>SMK</td>
+                                    <td>SMKN 4 Malang</td>
+                                    <td>Rekayasa Perangkat Lunak</td>
+                                    <td>2013 - 2016</td>
+                                </tr>
+                                <tr>
+                                    <td>Kuliah</td>
+                                    <td>Institut Teknologi dan Bisnis Asia Malang</td>
+                                    <td>S1 Teknik Informatika</td>
+                                    <td>2016 - 2020</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+           </div>
         </div>
-        <div class="skill">
-           <span id="skill"><h5><b>Skill Achievement</b> </h5></span>
-           <hr>
-           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nostrum illum excepturi quas harum perferendis ipsam similique ipsa quia temporibus, accusamus porro, maiores illo non inventore odit nihil? Dolorum, officiis? &nbsp;
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum debitis, maiores repudiandae voluptatibus fugiat temporibus, nesciunt soluta cupiditate doloribus, necessitatibus dicta? Perspiciatis, eos dolorum adipisci dignissimos fugit beatae nesciunt rerum.
-           </p>
         </div>
-        <div class="pengalaman">
-           <span id="pengalaman" class="kanan"><h5><b>Pengalaman Bekerja</b> </h5></span>
-           <hr>
-           <p>Pengalaman bekerja atau magang</p>
-            <ul class="collapsible">
-                <li>
-                <div class="collapsible-header">
-                    <i class="material-icons">filter_drama</i>
-                    Fakultas Syariah Universitas Islam Negeri Maulana Malik Ibrahim Malang
+        <div class="skill " id="skill">
+            <div class="row">
+                <div class="col s12">
+                <div class="card blue-grey darken-4">
+               <div class="card-content center">
+                <i class="medium material-icons">code</i> 
+                   <h5 style="margin-top: -10px;">Skill Achievement</h5>
+               </div>
+           </div>
+           </div>
+           </div>
+           <div class="row">
+                <div class="col s12 m6 l6">
+                    <div class="card-panel blue-grey darken-4">
+                        <h5>Kode Yang Dipelajari</h5>
+                        <span>HTML</span>
+                        <div class="progress orange lighten-3">
+                          <div class="determinate orange" style="width: 70%"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m6 l6">
+                                <span>CSS</span>
+                                <div class="progress blue lighten-3">
+                                  <div class="determinate blue" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l6">
+                                <span>Javascript</span>
+                                <div class="progress yellow lighten-3">
+                                <div class="determinate yellow" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m6 l6">
+                                <span>PHP</span>
+                                <div class="progress indigo lighten-3">
+                                    <div class="determinate indigo" style="width:70%"></div>
+                                </div>
+                            </div>
+                            <div class="col s12 m6 l6">
+                                <span>Laravel</span>
+                                <div class="progress red lighten-3">
+                                  <div class="determinate red" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>                                             
+                        <span>SQL</span>
+                        <div class="progress green lighten-3">
+                          <div class="determinate green" style="width: 70%"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="collapsible-body">
-                    <p>Status : Magang</p>
-                    <p>Posisi : Pengelola Website Fakultas</p>
-                    <p>Lama &nbsp;: Januari 2015 - November 2015 </p>
+
+                <div class="col s12 m6 l6">
+                    <div class="card-panel blue-grey darken-4">
+                        <h5>Kemampuan Personal Diri</h5>
+                        <span>Komunikasi</span>
+                        <div class="progress orange lighten-3">
+                          <div class="determinate orange" style="width: 70%"></div>
+                        </div>
+                        <span>Sosial</span>
+                        <div class="progress orange lighten-3">
+                          <div class="determinate orange" style="width: 70%"></div>
+                        </div>
+                        <span>Adaptasi</span>
+                        <div class="progress orange lighten-3">
+                          <div class="determinate orange" style="width: 70%"></div>
+                        </div>
+                        <span>Berpikir Kritis</span>
+                        <div class="progress orange lighten-3">
+                          <div class="determinate orange" style="width: 70%"></div>
+                        </div>
+                    </div>
                 </div>
-                </li>
-                <li>
-                <div class="collapsible-header">
-                    <i class="material-icons">place</i>
-                    Badan Penanggulangan Bencana Daerah Kota Malang
-                </div>
-                <div class="collapsible-body">
-                    <p>Status : Magang</p>
-                    <p>Posisi : PUSDALOPS</p>
-                    <p>Lama &nbsp;: Januari 2019 -  2019 </p>
-                </div>
-                </li>
-            </ul>
+           </div>
+        </div>
+
+        <div class="pengalaman ">
+           <div class="row">
+               <div class="col s12">
+                   <div class="card blue-grey darken-4">
+                       <div class="card-content white-text center">
+                        <span id="pengalaman"><h5><b>Kegiatan</b> </h5></span>
+                        <span>Pengalaman Bekerja Hingga Magang</span>
+                    </div>
+                   </div>
+               </div>
+               <div class="col s12">
+                <ul class="collapsible">
+                    <li>
+                    <div class="collapsible-header blue-grey darken-4">
+                        <i class="material-icons">work</i>
+                        Fakultas Syariah Universitas Islam Negeri Maulana Malik Ibrahim Malang
+                    </div>
+                    <div class="collapsible-body">
+                        <p>Status : Magang</p>
+                        <p>Posisi : Pengelola Website Fakultas</p>
+                        <p>Lama &nbsp;: Januari 2015 - November 2015 </p>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="collapsible-header blue-grey darken-4">
+                        <i class="material-icons">work</i>
+                        Badan Penanggulangan Bencana Daerah Kota Malang
+                    </div>
+                    <div class="collapsible-body">
+                        <p>Status : Magang</p>
+                        <p>Posisi : PUSDALOPS</p>
+                        <p>Lama &nbsp;: Januari 2019 -  2019 </p>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header blue-grey darken-4">
+                            <i class="material-icons">work</i>
+                            Institut Teknologi dan Bisnis Asia Fakultas Teknologi dan Desain
+                        </div>
+                        <div class="collapsible-body">
+                            <p>Status : Asisten Praktikum</p>
+                            <p>Posisi : Asisten Praktikum</p>
+                            <p>Lama &nbsp;: Januari 2019 -  2020 </p>
+                        </div>
+                        </li>
+                </ul>
+               </div>
+           </div>
         </div>
     </main>
     
@@ -105,10 +249,10 @@
                     <h5 class="white-text">Social Media</h5>
                     <span class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</span>
                     <br>
-                    <a href="#" class="fa fa-github"></a>
-                    <a href="#" class="fa fa-twitter-square"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
@@ -123,21 +267,14 @@
     <script src="js/materialize.min.js"></script>
     <script>
         $(document).ready(function (){
-            $('.sidenav').sidenav();
+            // $('.sidenav').sidenav();
+            $('.scrollspy').scrollSpy();
             $('.collapsible').collapsible();
             $('.fixed-action-btn').floatingActionButton();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true
+            });
         });
-    </script>
-    <script>
-    function HitungW(x) {
-    if (x.matches) {
-        document.getElementById("hp").classList.remove("sidenav-fixed");
-        }
-    }
-    var x = window.matchMedia("(max-width: 992px)");
-    HitungW(x);
-    // x.addListener(HitungW);
-
     </script>
     <script src="js/script.js"></script>
 

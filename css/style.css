@@ -2,55 +2,36 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: ghostwhite;
     overflow: auto;
 }
-
 header{
-    margin:0px;
+    margin: 0;
+    padding-left:70px;
+}
+
+header>.carousel{
     height: 100vh;
 }
 
-header,main{
-    padding-left:310px;
+main{
+    padding-left:90px;
     padding-right:10px;
 }
 
-.hp{
-    visibility: hidden;
+.sidenav{
+    width: 70px;
 }
 
-@media only screen and (max-width : 992px) {
-    header, main, footer{
-      padding-left: 0;
-    }
-    .page-footer{
-        padding-left: 0;
-    }
-    .hp{
-        visibility: visible;
-    }
-}
-
-footer{
-    padding-left: 300px;
-}
-
-header>h4{
-    margin: 0px;
-    text-align: center;
+.vtengah{
     position: relative;
-    top: 50%;
-    -ms-transform: rotateY(-50%);
-    transform: rotateY(-50%);
+    top: 25vh;
+    left: -10%;
+    -ms-transform: rotateY(-25%);
+    transform: rotateY(-25%);
 }
 
-header>.panah{
-    margin: 0px;
-    position: relative;
-    top: 80%;
-    -ms-transform: rotateY(-50%);
-    transform: rotateY(-50%);
+.vtengah > li{
+    padding-top: 30px;
 }
 
 hr{
@@ -79,7 +60,11 @@ main{
     text-align: right;
 }
 
-footer>.fa {
+footer>.container{
+    padding-left: 100px;
+}
+
+footer>a {
     padding: 20px;
     /* border: 0.5px solid white; */
     /* border-radius: 30%; */
@@ -91,9 +76,34 @@ footer>.fa {
   .tentang, .pendidikan, .skill{
       /* visibility: hidden; */
       margin: 0px;
+      padding-top: 10px;
       height: 100vh;
   }
+
   .pengalaman{
       margin: 0px;
       height: 100vh;
   }
+
+/* Media Screen */
+@media only screen and (max-width: 992px) {
+    .sidenav.sidenav-fixed {
+     -webkit-transform:translateX(0%);
+     transform:translateX(0%)
+    }
+
+    header>.carousel{
+        height:150px;
+    }
+    .vtengah{
+        position: relative;
+        top: 10vh;
+        left: -10%;
+        -ms-transform: rotateY(-25%);
+        transform: rotateY(-25%);
+    }
+    .tentang, .pendidikan, .skill{
+        /* visibility: hidden; */
+        height: auto;
+    }
+}
