@@ -73,17 +73,17 @@ footer>a {
   }
 
   /* Untuk Div */
-  .tentang, .pendidikan, .skill{
+/*   .tentang, .pendidikan, .skill{
       /* visibility: hidden; */
       margin: 0px;
       padding-top: 10px;
       height: 100vh;
-  }
+  } */
 
-  .pengalaman{
+/*   .pengalaman{
       margin: 0px;
       height: 100vh;
-  }
+  } */
 
 /* Media Screen */
 @media only screen and (max-width: 992px) {
