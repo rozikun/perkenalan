@@ -86,7 +86,7 @@ footer>a {
   } */
 
 /* Media Screen */
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
     .sidenav.sidenav-fixed {
      -webkit-transform:translateX(0%);
      transform:translateX(0%)
@@ -106,4 +106,4 @@ footer>a {
         /* visibility: hidden; */
         height: auto;
     }
-}
+} */
